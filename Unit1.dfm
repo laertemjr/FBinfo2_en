@@ -178,6 +178,7 @@ object Form1: TForm1
     Top = 311
     Width = 593
     Height = 109
+    ReadOnly = True
     ScrollBars = ssVertical
     TabOrder = 2
   end
