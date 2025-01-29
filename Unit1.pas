@@ -61,10 +61,10 @@ uses uGlobal;
 {$R *.dfm}
 
 {
-•  Servidor Firebird 5.0: port 3055, compatible with version 4.0
-•	Servidor Firebird 3.0: port 3030
-•	Servidor Firebird 2.5: port 3025, compatible with versions 2.1, 2.0
-•	Servidor Firebird 1.5: port 3015, compatible with version 1.0
+â€¢ Firebird 5.0 server: port 3055, compatible with version 4.0
+â€¢	Firebird 3.0 server: port 3030
+â€¢	Firebird 2.5 server: port 3025, compatible with versions 2.1, 2.0
+â€¢	Firebird 1.5 server: port 3015, compatible with version 1.0
 }
 
 procedure TForm1.FormActivate(Sender: TObject);
@@ -94,7 +94,7 @@ begin
       s := UpperCase(RightStr(edtBD.Text,3));
       if (s <> 'FDB') AND (s <> 'GDB')then
       begin
-        ShowMessage('It´s not a Firebird database.');
+        ShowMessage('ItÂ´s not a Firebird database.');
         edtBD.Text := EmptyStr;
         Break;
       end;
@@ -194,7 +194,7 @@ begin
    FDConnection1.DriverName := 'FB';
    // DriverID
    FDConnection1.Params.Add('DriverID=FB');
-   // Usuário
+   // UsuÃ¡rio
    FDConnection1.Params.Add('User_Name=SYSDBA');
    // PassWord
    FDConnection1.Params.Add('Password=masterkey');
